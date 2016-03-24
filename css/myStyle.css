@@ -1,0 +1,400 @@
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+.section {
+    width: 100%;
+    height: 100%;
+}
+
+.first {
+    background: url(../images/bannerbg.png) no-repeat;
+    background-size: cover;
+}
+
+.my_nav {
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    color: #fff;
+    background: rgba(40, 29, 36, 1);
+    box-shadow: 0 0 5px #fff;
+}
+
+.my_nav ul li {
+    width: 120px;
+    height: 80px;
+    float: left;
+    text-align: center;
+}
+
+.my_nav ul li a {
+    font-size: 20px;
+}
+
+.my_nav li:hover {
+    background: rgba(255, 255, 255, .4);
+}
+
+.my_nav li:hover a {
+    color: #fff;
+}
+
+.first_con {
+    width: 100%;
+    position: absolute;
+    top: 100px;
+}
+
+.introduce {
+    width: 340px;
+    height: 440px;
+    padding: 30px;
+    background: rgba(40, 29, 36, .5);
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, .5);
+    position: fixed;
+    top: 120px;
+    left: 100px;
+}
+
+.share_icon {
+    background: url(../images/share-icon.png) no-repeat;
+    width: 16px;
+    height: 16px;
+    display: block;
+    margin-top: 3px;
+    float: left;
+}
+
+.myYear {
+    background-position: -200px 0;
+}
+
+.myEdu {
+    background-position: -100px 0;
+}
+
+.myPro {
+    background-position: -225px 0;
+}
+
+.myEmail {
+    background-position: -99px -49px;
+}
+
+.myTel {
+    background-position: -125px 0;
+}
+
+.introduce .cover {
+    width: 340px;
+    height: 400px;
+    overflow: hidden;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.introduce .introduce_title {
+    width: 320px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.5);
+    text-indent: 10px;
+    font: 15px/40px "Microsoft Yahei";
+    transform: translateX(-110%);
+    transition: all 1s;
+}
+
+.introduce_title h2 {
+    color: cyan;
+}
+
+.introduce_detail {
+    width: 320px;
+    height: 350px;
+    transform: translate(0, -370px);
+    transition: all 1s;
+    transition-delay: 1.2s;
+}
+
+.current.first .introduce_title,
+.current.first .introduce_detail {
+    transform: translate(0);
+}
+
+.introduce_detail > ul {
+    margin-top: 50px;
+}
+
+.introduce_detail li {
+    width: 300px;
+    height: 40px;
+    margin: 10px;
+    line-height: 40px;
+    font: 16px "microsoft yahei";
+}
+
+.introduce_detail li p {
+    text-align: right;
+    font: 18px "Microsoft Yahei";
+    color: #ccc;
+}
+
+.profession {
+    width: 240px;
+    height: 200px;
+    text-align: center;
+    border-radius: 240px;
+    background: rgba(0, 0, 0, .5);
+    margin-left: 750px;
+    margin-top: 180px;
+    padding-top: 40px;
+    display: none;
+}
+
+.profession > p {
+    font-size: 20px;
+    margin: 10px 0 20px 0;
+}
+
+.profession > span {
+    font-size: 25px;
+    color: red;
+}
+
+/*第二屏*/
+.second {
+    padding: 50px;
+    position: relative;
+}
+
+.share_title {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    position: relative;
+    float: left;
+}
+
+.share_title::before,
+.share_title::after {
+    content: "";
+    width: 400px;
+    height: 1px;
+    display: block;
+    background: #fff;
+    position: absolute;
+    top: 20px;
+}
+
+.share_title::before {
+    left: 5px;
+}
+
+.share_title::after {
+    right: 5px;
+}
+
+.share_title p {
+    color: #ccc;
+    font-size: 16px;
+    text-align: left;
+    line-height: 50px;
+}
+
+.work_detail {
+    position: absolute;
+    top: 100px;
+    width: 500px;
+    height: 100%;
+}
+
+.work_title {
+    color: darkorange;
+    font-size: 16px;
+    border-bottom: 1px solid #fff;
+
+}
+.content_title {
+    line-height: 30px;
+}
+.work_content p {
+    color: #ccc;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+/*第三屏*/
+.third {
+    padding: 50px;
+    position: relative;
+}
+
+.third_title {
+    margin-bottom: 30px;
+}
+
+.web_technology {
+    margin-top: 50px;
+}
+
+p.technology_num1 {
+    color: red;
+}
+
+p.technology_num2 {
+    color: orange;
+}
+
+p.technology_num3 {
+    color: deeppink;
+}
+
+.web_technology_detail p {
+    font-size: 18px;
+}
+
+.web_technology ul li {
+    width: 120px;
+    height: 120px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 120px;
+    float: left;
+    margin-right: 10px;
+    text-align: center;
+    line-height: 120px;
+    border: 1px solid #fff;
+    background: rgba(0, 0, 0, .4);
+    animation: scale 1.5s linear infinite;
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1)
+    }
+    50% {
+        transform: scale(1.1)
+    }
+    100% {
+        transform: scale(1)
+    }
+}
+
+/*第四屏*/
+.forth {
+    position: relative;
+}
+
+.forth_con {
+    width: 100%;
+    height: 540px;
+    position: absolute;
+    top: 50%;
+    margin-top: -270px;
+    background: url(../images/footerbg.jpg) no-repeat;
+}
+
+.forth .up {
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    margin-left: -24px;
+}
+
+.forth_title {
+    width: 30px;
+    height: 100%;
+    text-align: center;
+    position: relative;
+    float: left;
+    margin-left: 30px;
+}
+
+.forth_title h2 {
+    position: absolute;
+    top: 40%;
+}
+
+.forth_title::before,
+.forth_title::after {
+    content: "";
+    width: 1px;
+    height: 30%;
+    display: block;
+    background: #fff;
+    position: absolute;
+    left: 15px;
+}
+
+.forth_title::before {
+    top: 5px;
+}
+
+.forth_title::after {
+    bottom: 5px;
+}
+
+.forth_myself {
+    margin: 50px 0 0 150px;
+}
+
+.forth_myself p {
+    line-height: 50px;
+    font-size: 18px;
+    color: #0DADD9;
+}
+
+/*全屏插件 导航部分样式*/
+#fullPage-nav {
+    position: fixed;
+    z-index: 100;
+    margin-top: -32px;
+    top: 50%;
+    opacity: 1;
+}
+
+#fullPage-nav li {
+    display: block;
+    width: 14px;
+    height: 13px;
+    margin: 7px;
+    position: relative;
+}
+
+#fullPage-nav span {
+    top: 2px;
+    left: 2px;
+    width: 8px;
+    height: 8px;
+    border: 1px solid orange;
+    background: rgba(0, 0, 0, 0);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+}
+
+#fullPage-nav li .active span {
+    background: #fff;
+}
+
+#fullPage-nav li a {
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#fullPage-nav.right {
+    right: 17px;
+}
